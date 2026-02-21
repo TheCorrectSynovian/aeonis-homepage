@@ -49,6 +49,7 @@
                 <li><a href="#commands" class="nav-link">Commands</a></li>
                 <li><a href="#changelog" class="nav-link">Changelog</a></li>
                 <li><a href="#installation" class="nav-link">Install</a></li>
+                <li><a href="#wiki" class="nav-link">Wiki</a></li>
                 <li><a href="#downloads" class="nav-link nav-link-cta">Download</a></li>
             </ul>
         </div>
@@ -97,6 +98,10 @@
                 <a href="#features" class="btn btn-ghost">
                     <span>Explore Features</span>
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#wiki" class="btn btn-ghost btn-wiki">
+                    <span>Open Full Wiki</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
                 </a>
             </div>
             <div class="hero-platforms reveal">
@@ -545,6 +550,109 @@
             </div>
         </section>
 
+
+
+        <!-- Wiki Section -->
+        <section id="wiki" class="section section-dark">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-chip">Documentation</span>
+                    <h2 class="section-title">Aeonis CM <span class="gradient-text">Full Wiki</span></h2>
+                    <p class="section-desc">A complete in-site guide for systems, dimensions, mobs, progression, and command usage in v3.0.0.</p>
+                </div>
+
+                <div class="wiki-toolbar reveal">
+                    <input id="wikiSearch" class="wiki-search" type="search" placeholder="Search wiki: command, mob, biome, dimension..." aria-label="Search wiki" />
+                    <span class="wiki-tip">Tip: try <code>/comp</code>, <code>Deeper Dark</code>, or <code>Safe Chest</code>.</span>
+                </div>
+
+                <div class="wiki-grid">
+                    <article class="wiki-card reveal" data-tilt>
+                        <h3>Mod Overview</h3>
+                        <p>Aeonis is a multi-system framework that merges mob possession, AI command tooling, custom dimensions, ambient rendering systems, and progression mechanics in one gameplay stack.</p>
+                        <ul>
+                            <li><strong>Star system:</strong> first-person mob possession with movement + attack integration</li>
+                            <li><strong>AI layer:</strong> in-game assistant + director command workflows</li>
+                            <li><strong>Content layer:</strong> dimensions, structures, mobs, blocks, loot, recipes</li>
+                        </ul>
+                    </article>
+
+                    <article class="wiki-card reveal" data-tilt>
+                        <h3>Core Gameplay Loops</h3>
+                        <ul>
+                            <li><strong>Power loop:</strong> transform, learn mob ability timings, use role-specific mobility</li>
+                            <li><strong>Exploration loop:</strong> travel between Ancard and Deeper Dark for biome/structure loot</li>
+                            <li><strong>Automation loop:</strong> use AI + companion bot for support and control flows</li>
+                            <li><strong>Progression loop:</strong> acquire new blocks, enchantments, advancements, and drop tables</li>
+                        </ul>
+                    </article>
+                </div>
+
+                <div class="wiki-accordion reveal" id="wikiAccordion">
+                    <details class="wiki-item" open>
+                        <summary>Dimension Wiki — Deeper Dark + Ancard</summary>
+                        <div class="wiki-content">
+                            <h4>Deeper Dark Dimension</h4>
+                            <p>New underworld region designed around noise-driven cave generation and ancient ecosystem themes.</p>
+                            <ul>
+                                <li><strong>Biomes:</strong> Amethyst Mines, Ancient Dark, Deep Oasis, Deeper Dark, Deeper Dark Cavern, Obsidian Barrier, Volcanic Caverns</li>
+                                <li><strong>Structures:</strong> Ancient Fortress, Ancient Village, Laboratory, Amethyst Mineshaft, Sculk Trap, plus rare structure variants</li>
+                                <li><strong>Worldgen:</strong> custom noise fields, lava channels, fossil formations, sculk growth pockets, rare terrain signatures</li>
+                            </ul>
+                            <h4>Ancard Expansion</h4>
+                            <ul>
+                                <li>Custom fog + post-processing pipeline + dedicated dimension renderer</li>
+                                <li>Dynamic lightning and eclipse event hooks</li>
+                                <li>Expanded block families: stone, deepslate, basalt, obsidian shale, bloodroot and veilshade biome materials</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <details class="wiki-item">
+                        <summary>Mob Wiki — New Ecosystems &amp; Bosses</summary>
+                        <div class="wiki-content">
+                            <p><strong>Ancard roster:</strong> Ancard Sovereign, Ancient Colossus, Ash Stalker, Bloodroot Fiend, Boneweaver, Crypt Mite, Echo Wisp, Obelisk Sentinel, Rift Screecher, Ruin Hound, Shade Lurker, Sporeback, Veil Mimic, Veilshade Watcher, and more.</p>
+                            <p><strong>Arda / Ported roster:</strong> Radioactive Warden, Sculk Boss 1, Sculk Golem Boss Reloaded, Shadow Hunter, Sculk Enderman, Sculk Skeleton, Sculk Slime, Sculk Creeper, Sculk Creaking, and more.</p>
+                            <p>Each ecosystem is tuned for different atmosphere and combat pacing, with compatibility for possession gameplay and custom loot pipelines.</p>
+                        </div>
+                    </details>
+
+                    <details class="wiki-item">
+                        <summary>Mechanics Wiki — Blocks, Enchantments, Progression</summary>
+                        <div class="wiki-content">
+                            <ul>
+                                <li><strong>Safe Chest:</strong> high-resistance storage unit that supports single, double, or triple compositions</li>
+                                <li><strong>Permanent Flame:</strong> dark red fire variant that cannot be extinguished by standard interaction</li>
+                                <li><strong>Enchantments:</strong> ClearSight, DarkSpeed, Resonate, SafeFall, Shrieker Sense, Sonic Boom, Undermine</li>
+                                <li><strong>Progression:</strong> new advancements, effects, custom recipes, and mod loot tables</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <details class="wiki-item">
+                        <summary>Command Wiki — Complete Command Index</summary>
+                        <div class="wiki-content wiki-codegrid">
+                            <div>
+                                <h4>Transformation</h4>
+                                <p><code>/transform &lt;entity&gt;</code>, <code>/untransform</code>, <code>/exitbody s</code>, <code>/exitbody c</code></p>
+                                <h4>AI Assistant</h4>
+                                <p><code>/ai llm spawn</code>, <code>/ai llm despawn</code>, <code>/ai llm config</code></p>
+                                <h4>Companion Bot</h4>
+                                <p><code>/comp spawn</code>, <code>/comp comehere</code>, <code>/comp stats</code>, <code>/comp dismiss</code></p>
+                            </div>
+                            <div>
+                                <h4>System</h4>
+                                <p><code>/aeonis help</code>, <code>/aeonis sys ping</code>, <code>/aeonis sys story</code>, <code>/aeonis dimensions</code>, <code>/aeonis features extra_mobs true</code></p>
+                                <h4>Ability &amp; Event Utility</h4>
+                                <p><code>/ability dash</code>, <code>/ability blink</code>, <code>/ability roar</code>, <code>/event thunder</code>, <code>/event eclipse</code></p>
+                            </div>
+                            <p class="wiki-note">This index mirrors the in-page command arsenal and the v3.0.0 release command set.</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
         <!-- Changelog Section -->
         <section id="changelog" class="section">
             <div class="container">
@@ -747,6 +855,7 @@
                     <a href="https://www.curseforge.com/minecraft/mc-mods/aeonis-command-master" target="_blank" rel="noopener">CurseForge</a>
                     <a href="https://modrinth.com/mod/aeonis-command-master" target="_blank" rel="noopener">Modrinth</a>
                     <a href="https://github.com/TheCorrectSynovian/aeonis-cm" target="_blank" rel="noopener">GitHub</a>
+                    <a href="#wiki">Wiki</a>
                     <a href="https://www.youtube.com/@quantumcreeper" target="_blank" rel="noopener">YouTube</a>
                 </div>
                 <p class="footer-copy">Made with ❤️ by QuantumCreeper · MIT License · v3.0.0</p>

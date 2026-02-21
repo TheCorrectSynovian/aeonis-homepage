@@ -212,4 +212,29 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // === Wiki Search + Accordion UX ===
+    const wikiSearch = document.getElementById('wikiSearch');
+    const wikiItems = document.querySelectorAll('.wiki-item');
+
+    if (wikiSearch && wikiItems.length > 0) {
+        wikiSearch.addEventListener('input', () => {
+            const q = wikiSearch.value.trim().toLowerCase();
+            wikiItems.forEach(item => {
+                const text = item.textContent.toLowerCase();
+                const match = !q || text.includes(q);
+                item.classList.toggle('wiki-hidden', !match);
+                if (match && q.length > 1) item.open = true;
+            });
+        });
+    }
+
+    wikiItems.forEach(item => {
+        item.addEventListener('toggle', () => {
+            if (!item.open) return;
+            wikiItems.forEach(other => {
+                if (other !== item) other.open = false;
+            });
+        });
+    });
 });
