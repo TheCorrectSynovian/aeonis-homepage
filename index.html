@@ -1,872 +1,407 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0605W7JJ6X"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-0605W7JJ6X');
+    </script>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0605W7JJ6X"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-0605W7JJ6X');
-</script>
-
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2207763509951946"
-     crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2207763509951946" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Aeonis: Command Master v3.0.0 — The Revolution for Minecraft 1.21.11. New Deeper Dark dimension, Ancard expansion, new mobs, companion bot, and advanced progression.">
-    <meta name="theme-color" content="#00d9ff">
-    <title>Aeonis: Command Master v3.0.0 — The Revolution</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Aeonis v4.0.0 - First Stable 26.1 Release. Mob possession, Deeper Dark, Ancard expansion, AI remasters, and updated command systems.">
+    <meta name="theme-color" content="#f59e0b">
+    <title>Aeonis v4.0.0 - First Stable 26.1 Release</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Scroll Progress Bar -->
     <div class="scroll-progress" id="scrollProgress"></div>
-
-    <!-- Particle Canvas -->
     <canvas id="particleCanvas"></canvas>
 
-    <!-- Navigation -->
     <nav class="navbar" id="navbar">
-        <div class="nav-container">
+        <div class="container nav-container">
             <a href="#" class="nav-logo">
-                <span class="logo-icon">⚡</span>
-                <span class="logo-text">Aeonis<span class="logo-accent">CM</span></span>
-                <span class="logo-version">v3.0.0</span>
+                <img class="logo-emblem" src="assets/aeonis-logo.svg" alt="Aeonis logo">
+                <span class="logo-mark">AEONIS</span>
+                <span class="logo-version">v4.0.0</span>
             </a>
             <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
                 <span class="hamburger"></span>
             </button>
             <ul class="nav-menu" id="navMenu">
-                <li><a href="#hero" class="nav-link">Home</a></li>
-                <li><a href="#features" class="nav-link">Features</a></li>
-                <li><a href="#possession" class="nav-link">Possession</a></li>
-                <li><a href="#ai-assistant" class="nav-link">AI Assistant</a></li>
-                <li><a href="#commands" class="nav-link">Commands</a></li>
-                <li><a href="#changelog" class="nav-link">Changelog</a></li>
-                <li><a href="#installation" class="nav-link">Install</a></li>
-                <li><a href="#wiki" class="nav-link">Wiki</a></li>
-                <li><a href="#downloads" class="nav-link nav-link-cta">Download</a></li>
+                <li><a class="nav-link" href="#overview">Overview</a></li>
+                <li><a class="nav-link" href="#highlights">Highlights</a></li>
+                <li><a class="nav-link" href="#commands">Commands</a></li>
+                <li><a class="nav-link" href="#showcase">Showcase</a></li>
+                <li><a class="nav-link" href="#timeline">Timeline</a></li>
+                <li><a class="nav-link" href="#install">Install</a></li>
+                <li><a class="nav-link nav-link-cta" href="#downloads">Download</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="hero" id="hero">
-        <div class="hero-bg-grid"></div>
-        <div class="hero-orb hero-orb-1"></div>
-        <div class="hero-orb hero-orb-2"></div>
-        <div class="hero-orb hero-orb-3"></div>
-        <div class="hero-content">
-            <div class="hero-badge-row reveal">
-                <span class="hero-chip">🎮 Minecraft Fabric Mod</span>
-                <span class="hero-chip chip-new">✨ v3.0.0 — The Revolution</span>
-            </div>
-            <h1 class="hero-title reveal">
-                <span class="title-line">Explore.</span>
-                <span class="title-line">Possess.</span>
-                <span class="title-line title-accent">Evolve.</span>
-            </h1>
-            <p class="hero-subtitle reveal">
-                <strong>Aeonis: Command Master 3.0.0</strong> — A unified Minecraft framework with mob possession, AI systems, custom dimensions, evolved worldgen, and massive new mob ecosystems.
-            </p>
-            <div class="hero-stats reveal">
-                <div class="stat-item">
-                    <span class="stat-number" data-count="70">0</span><span class="stat-plus">+</span>
-                    <span class="stat-label">Commands &amp; Systems</span>
+    <header class="hero" id="overview">
+        <div class="hero-shape hero-shape-a"></div>
+        <div class="hero-shape hero-shape-b"></div>
+        <div class="container hero-grid">
+            <div class="hero-copy reveal">
+                <p class="chip">First Stable 26.1 Release</p>
+                <h1>Aeonis 4.0 is live.</h1>
+                <p class="hero-text">
+                    Mob possession, AI systems, dimension content, and gameplay remasters now aligned on the stable 26.1 line.
+                    Baseline is Minecraft 26.1 with 26.1.1 hotfix compatibility.
+                </p>
+                <div class="hero-actions">
+                    <a href="#downloads" class="btn btn-primary">Download Aeonis</a>
+                    <a href="#highlights" class="btn btn-ghost">See 4.0 changes</a>
                 </div>
-                <div class="stat-divider"></div>
-                <div class="stat-item">
-                    <span class="stat-number" data-count="140">0</span><span class="stat-plus">+</span>
-                    <span class="stat-label">Mobs &amp; Variants</span>
+                <div class="hero-logo-note">
+                    <img src="assets/aeonis-logo.svg" alt="Aeonis symbol">
+                    <span>New official site emblem generated for v4.0</span>
                 </div>
-                <div class="stat-divider"></div>
-                <div class="stat-item">
-                    <span class="stat-number" data-count="3">0</span>
-                    <span class="stat-label">LLM Providers</span>
+                <div class="hero-badges">
+                    <span>Fabric 26.1</span>
+                    <span>Quilt 26.1</span>
+                    <span>Version 4.0.0</span>
                 </div>
             </div>
-            <div class="hero-actions reveal">
-                <a href="#downloads" class="btn btn-primary">
-                    <span>Download Now</span>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
-                </a>
-                <a href="#features" class="btn btn-ghost">
-                    <span>Explore Features</span>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </a>
-                <a href="#wiki" class="btn btn-ghost btn-wiki">
-                    <span>Open Full Wiki</span>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-                </a>
+            <div class="hero-metrics reveal">
+                <div class="metric-card">
+                    <p class="metric-value"><span class="stat-number" data-count="35">0</span>+</p>
+                    <p class="metric-label">Commands and gameplay systems</p>
+                </div>
+                <div class="metric-card">
+                    <p class="metric-value"><span class="stat-number" data-count="7">0</span></p>
+                    <p class="metric-label">Biomes in Deeper Dark</p>
+                </div>
+                <div class="metric-card">
+                    <p class="metric-value"><span class="stat-number" data-count="6">0</span></p>
+                    <p class="metric-label">Companion AI states</p>
+                </div>
             </div>
-            <div class="hero-platforms reveal">
-                <a href="https://www.curseforge.com/minecraft/mc-mods/aeonis-command-master" target="_blank" rel="noopener" class="platform-badge">
-                    <span class="platform-dot curseforge"></span>CurseForge
-                </a>
-                <a href="https://modrinth.com/mod/aeonis-command-master" target="_blank" rel="noopener" class="platform-badge">
-                    <span class="platform-dot modrinth"></span>Modrinth
-                </a>
-                <a href="https://github.com/TheCorrectSynovian/aeonis-cm" target="_blank" rel="noopener" class="platform-badge">
-                    <span class="platform-dot github"></span>GitHub
-                </a>
-                <span class="platform-badge">
-                    <span class="platform-dot fabric"></span>Fabric 1.21.11
-                </span>
-            </div>
-        </div>
-        <div class="hero-scroll-hint">
-            <span>Scroll to explore</span>
-            <div class="scroll-arrow"></div>
         </div>
     </header>
 
     <main>
-        <!-- Features Section -->
-        <section id="features" class="section">
+        <section class="section" id="highlights">
             <div class="container">
-                <div class="section-header reveal">
-                    <span class="section-chip">Aeonis 3.0.0</span>
-                    <h2 class="section-title">Aeonis — The <span class="gradient-text">Revolution</span></h2>
-                    <p class="section-desc">Now featuring Deeper Dark, a full Ancard expansion, new bosses, worldgen overhauls, and deeper progression systems.</p>
+                <div class="section-head reveal">
+                    <p class="chip">Release Highlights</p>
+                    <h2>What changed in 4.0.0</h2>
+                    <p>Information below is remastered from README and release notes so the website reflects the current stable release.</p>
                 </div>
-                <div class="features-grid">
-                    <div class="feature-card feature-card-lg reveal" data-tilt>
-                        <div class="feature-glow"></div>
-                        <div class="feature-icon-wrap">
-                            <span class="feature-icon">🧠</span>
-                        </div>
-                        <h3>Mob Possession System</h3>
-                        <p>The star feature — become ANY mob with full WASD control, first-person view, unique attacks, flying, swimming, and more. Experience Minecraft through entirely new eyes.</p>
-                        <div class="feature-tags">
-                            <span class="tag">Star Feature</span>
-                            <span class="tag">100+ Mobs</span>
-                        </div>
-                    </div>
-                    <div class="feature-card reveal" data-tilt>
-                        <div class="feature-glow"></div>
-                        <div class="feature-icon-wrap">
-                            <span class="feature-icon">🤖</span>
-                        </div>
-                        <h3>AI Assistant</h3>
-                        <p>Spawn an LLM-powered AI companion that follows you, chats, executes commands, builds, creates scripts, and automates tasks.</p>
-                        <div class="feature-tags">
-                            <span class="tag">GPT / Gemini / OpenRouter</span>
-                        </div>
-                    </div>
-                    <div class="feature-card reveal" data-tilt>
-                        <div class="feature-glow"></div>
-                        <div class="feature-icon-wrap">
-                            <span class="feature-icon">💀</span>
-                        </div>
-                        <h3>Deeper Dark Dimension</h3>
-                        <p>Descend into a full-scale underworld with 7 unique biomes, custom cave noise, fossil fields, lava systems, and ancient structures.</p>
-                        <div class="feature-tags">
-                            <span class="tag">7 Biomes</span>
-                            <span class="tag">Ancient Structures</span>
-                        </div>
-                    </div>
-                    <div class="feature-card reveal" data-tilt>
-                        <div class="feature-glow"></div>
-                        <div class="feature-icon-wrap">
-                            <span class="feature-icon">🎭</span>
-                        </div>
-                        <h3>Ancard Expansion</h3>
-                        <p>Experience custom fog, post-processing, dynamic lightning, eclipse events, and new Ancard blocks, stones, and ore pipelines.</p>
-                        <div class="feature-tags">
-                            <span class="tag">Atmosphere Pipeline</span>
-                        </div>
-                    </div>
-                    <div class="feature-card reveal" data-tilt>
-                        <div class="feature-glow"></div>
-                        <div class="feature-icon-wrap">
-                            <span class="feature-icon">👻</span>
-                        </div>
-                        <h3>New Mob Ecosystems</h3>
-                        <p>Fight or possess dozens of new mobs: Ancard Sovereign, Ancient Colossus, Ash Stalker, Rift Screecher, Radioactive Warden, Sculk variants, and more.</p>
-                        <div class="feature-tags">
-                            <span class="tag">Ancard + Arda</span>
-                        </div>
-                    </div>
-                    <div class="feature-card reveal" data-tilt>
-                        <div class="feature-glow"></div>
-                        <div class="feature-icon-wrap">
-                            <span class="feature-icon">🎯</span>
-                        </div>
-                        <h3>Companion Bot System</h3>
-                        <p>Summon and manage your own helper with <code>/comp spawn</code>, <code>/comp comehere</code>, <code>/comp stats</code>, and <code>/comp dismiss</code>.</p>
-                        <div class="feature-tags">
-                            <span class="tag">Player Helper</span>
-                        </div>
-                    </div>
-                    <div class="feature-card reveal" data-tilt>
-                        <div class="feature-glow"></div>
-                        <div class="feature-icon-wrap">
-                            <span class="feature-icon">⚡</span>
-                        </div>
-                        <h3>New Blocks &amp; Enchantments</h3>
-                        <p>Build with Safe Chests, Permanent Flame, and new enchantments: ClearSight, DarkSpeed, Resonate, SafeFall, Shrieker Sense, Sonic Boom, Undermine.</p>
-                        <div class="feature-tags">
-                            <span class="tag">Progression Expanded</span>
-                        </div>
-                    </div>
-                    <div class="feature-card reveal" data-tilt>
-                        <div class="feature-glow"></div>
-                        <div class="feature-icon-wrap">
-                            <span class="feature-icon">🎬</span>
-                        </div>
-                        <h3>Dimensions &amp; Travel</h3>
-                        <p>Travel through reinforced deepslate portals into Ancard and push deeper into Deeper Dark for long-form exploration and loot progression.</p>
-                        <div class="feature-tags">
-                            <span class="tag">Ancard + Deeper Dark</span>
-                        </div>
-                    </div>
+                <div class="feature-grid">
+                    <article class="feature-card reveal" data-tilt>
+                        <h3>Stable release milestone</h3>
+                        <p>First non-snapshot stable build on Minecraft 26.1, with final migration completed from 1.21.11.</p>
+                    </article>
+                    <article class="feature-card reveal" data-tilt>
+                        <h3>Snapshot path completed</h3>
+                        <p>The 4.0 line stabilized from SNAPSHOT5 through SNAPSHOT10 before final 4.0.0 release cut.</p>
+                    </article>
+                    <article class="feature-card reveal" data-tilt>
+                        <h3>Warning policy remaster</h3>
+                        <p>Global startup warning spam removed; warnings are now targeted to specific in-progress surfaces.</p>
+                    </article>
+                    <article class="feature-card reveal" data-tilt>
+                        <h3>Prop Hunt hotfix remaster</h3>
+                        <p>Improved round-state validation, leave cleanup, border enforcement, pacing, and reward handling.</p>
+                    </article>
+                    <article class="feature-card reveal" data-tilt>
+                        <h3>Copper Stalker remaster</h3>
+                        <p>Food-based temporary taming, morning departure behavior, and feeding-window pacification flow.</p>
+                    </article>
+                    <article class="feature-card reveal" data-tilt>
+                        <h3>Fun command remaster</h3>
+                        <p>Added timed morph pranks and new commands: boing, confetti, and swap.</p>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <!-- Mob Possession Showcase -->
-        <section id="possession" class="section section-dark">
-            <div class="container">
-                <div class="section-header reveal">
-                    <span class="section-chip">Star Feature</span>
-                    <h2 class="section-title">Mob Possession <span class="gradient-text">System</span></h2>
-                    <p class="section-desc">Transform into any mob and experience Minecraft from their perspective with full control.</p>
+        <section class="section section-alt" id="dimensions">
+            <div class="container two-col">
+                <div class="panel reveal">
+                    <h3>Deeper Dark dimension</h3>
+                    <p>Full-scale underworld expansion with custom cave logic and progression routing.</p>
+                    <ul>
+                        <li>7 biomes: Amethyst Mines, Ancient Dark, Deep Oasis, Deeper Dark, Deeper Dark Cavern, Obsidian Barrier, Volcanic Caverns.</li>
+                        <li>Worldgen structures: Ancient Fortress, Ancient Village, Laboratory, Amethyst Mineshaft, Sculk Trap, and more.</li>
+                        <li>Custom noise, placed features, fossil fields, lava systems, and sculk growth paths.</li>
+                    </ul>
                 </div>
-
-                <div class="possession-showcase">
-                    <div class="possession-info reveal">
-                        <div class="possession-feature">
-                            <span class="pf-icon">🎮</span>
-                            <div>
-                                <h4>Full WASD Control</h4>
-                                <p>Move, jump, swim, and fly naturally as any creature.</p>
-                            </div>
-                        </div>
-                        <div class="possession-feature">
-                            <span class="pf-icon">👀</span>
-                            <div>
-                                <h4>First-Person View</h4>
-                                <p>See the world from their perspective with proper camera adjustments.</p>
-                            </div>
-                        </div>
-                        <div class="possession-feature">
-                            <span class="pf-icon">⚔️</span>
-                            <div>
-                                <h4>Unique Attacks</h4>
-                                <p>Every mob has its own attack — from Wither Skulls to Chicken Eggs.</p>
-                            </div>
-                        </div>
-                        <div class="possession-feature">
-                            <span class="pf-icon">🦅</span>
-                            <div>
-                                <h4>3D Flight &amp; Swimming</h4>
-                                <p>Full pitch-controlled flight for flying mobs and natural aquatic movement.</p>
-                            </div>
-                        </div>
-                        <div class="possession-feature">
-                            <span class="pf-icon">❤️</span>
-                            <div>
-                                <h4>Health Display</h4>
-                                <p>Real-time mob health shown in your action bar.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="possession-attacks reveal">
-                        <h3 class="attacks-title">Special Attack Cooldowns</h3>
-                        <div class="attack-list">
-                            <div class="attack-row">
-                                <span class="attack-mob">💀 Wither</span>
-                                <div class="attack-bar-wrap">
-                                    <div class="attack-bar" style="--bar-width: 43%;" data-label="Explosive Skulls">
-                                        <span class="bar-fill"></span>
-                                    </div>
-                                </div>
-                                <span class="attack-cd">300ms</span>
-                            </div>
-                            <div class="attack-row">
-                                <span class="attack-mob">🐉 Dragon</span>
-                                <div class="attack-bar-wrap">
-                                    <div class="attack-bar" style="--bar-width: 57%;" data-label="Dragon Fireballs">
-                                        <span class="bar-fill"></span>
-                                    </div>
-                                </div>
-                                <span class="attack-cd">400ms</span>
-                            </div>
-                            <div class="attack-row">
-                                <span class="attack-mob">💨 Breeze</span>
-                                <div class="attack-bar-wrap">
-                                    <div class="attack-bar" style="--bar-width: 50%;" data-label="Wind Charges">
-                                        <span class="bar-fill"></span>
-                                    </div>
-                                </div>
-                                <span class="attack-cd">350ms</span>
-                            </div>
-                            <div class="attack-row">
-                                <span class="attack-mob">🔥 Blaze</span>
-                                <div class="attack-bar-wrap">
-                                    <div class="attack-bar" style="--bar-width: 36%;" data-label="Small Fireballs">
-                                        <span class="bar-fill"></span>
-                                    </div>
-                                </div>
-                                <span class="attack-cd">250ms</span>
-                            </div>
-                            <div class="attack-row">
-                                <span class="attack-mob">👻 Ghast</span>
-                                <div class="attack-bar-wrap">
-                                    <div class="attack-bar" style="--bar-width: 86%;" data-label="Large Fireballs">
-                                        <span class="bar-fill"></span>
-                                    </div>
-                                </div>
-                                <span class="attack-cd">600ms</span>
-                            </div>
-                            <div class="attack-row">
-                                <span class="attack-mob">🐔 Chicken</span>
-                                <div class="attack-bar-wrap">
-                                    <div class="attack-bar" style="--bar-width: 100%;" data-label="Lay Eggs!">
-                                        <span class="bar-fill"></span>
-                                    </div>
-                                </div>
-                                <span class="attack-cd">700ms</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="controls-grid reveal">
-                    <h3 class="controls-title">🎮 Controls While Transformed</h3>
-                    <div class="controls-keys">
-                        <div class="key-item"><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd><span>Move</span></div>
-                        <div class="key-item"><kbd>Space</kbd><span>Jump / Fly Up / Swim Up</span></div>
-                        <div class="key-item"><kbd>Shift</kbd><span>Sneak / Fly Down / Sink</span></div>
-                        <div class="key-item"><kbd>Mouse</kbd><span>Look Around</span></div>
-                        <div class="key-item"><kbd>LClick</kbd><span>Attack / Shoot</span></div>
-                        <div class="key-item"><kbd>T</kbd><span>Teleport (Enderman)</span></div>
-                        <div class="key-item"><kbd>P</kbd><span>Soul Possess</span></div>
-                    </div>
+                <div class="panel reveal">
+                    <h3>Ancard expansion and ecosystems</h3>
+                    <p>Ancard receives atmosphere, renderer, and event pipeline upgrades plus expanded creature rosters.</p>
+                    <ul>
+                        <li>Custom fog and post-processing with dynamic lightning and eclipse events.</li>
+                        <li>New block families and biome materials in bloodroot and veilshade regions.</li>
+                        <li>Mobs include Ancard Sovereign, Ancient Colossus, Rift Screecher, Veil Mimic, and Arda-side sculk variants.</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
-        <!-- AI Assistant Section -->
-        <section id="ai-assistant" class="section">
+        <section class="section" id="commands">
             <div class="container">
-                <div class="section-header reveal">
-                    <span class="section-chip">AI-Powered</span>
-                    <h2 class="section-title">Aeonis <span class="gradient-text">AI Assistant</span></h2>
-                    <p class="section-desc">Spawn an intelligent companion powered by real LLMs — it follows you, chats, executes any command, builds, scripts, and automates.</p>
-                </div>
-
-                <div class="ai-grid">
-                    <div class="ai-card ai-card-main reveal">
-                        <div class="ai-card-header">
-                            <span class="ai-icon">🚀</span>
-                            <h3>Quick Start</h3>
-                        </div>
-                        <div class="ai-commands">
-                            <div class="ai-cmd"><code>/ai llm spawn</code><span>Spawn Aeonis AI</span></div>
-                            <div class="ai-cmd"><code>/ai llm despawn</code><span>Despawn Aeonis</span></div>
-                            <div class="ai-cmd"><code>/ai llm config</code><span>Open config UI</span></div>
-                        </div>
-                    </div>
-                    <div class="ai-card reveal">
-                        <div class="ai-card-header">
-                            <span class="ai-icon">⚡</span>
-                            <h3>Command Execution</h3>
-                        </div>
-                        <p>Aeonis executes <strong>any Minecraft command</strong> with full OP privileges. Just chat naturally — "Give me diamonds" → <code>[CMD: /give @p diamond 64]</code></p>
-                    </div>
-                    <div class="ai-card reveal">
-                        <div class="ai-card-header">
-                            <span class="ai-icon">📜</span>
-                            <h3>Script System</h3>
-                        </div>
-                        <p>Create persistent multi-command scripts saved to disk. Survive game restarts. Run anytime with <code>[RUNSCRIPT: name]</code>.</p>
-                    </div>
-                    <div class="ai-card reveal">
-                        <div class="ai-card-header">
-                            <span class="ai-icon">⏰</span>
-                            <h3>Automation</h3>
-                        </div>
-                        <p>Schedule repeating tasks — auto-heal every 60s, keep daytime, mob alerts. Stop anytime with <code>[STOPAUTO: name]</code>.</p>
-                    </div>
-                    <div class="ai-card reveal">
-                        <div class="ai-card-header">
-                            <span class="ai-icon">🚶</span>
-                            <h3>Physical Movement</h3>
-                        </div>
-                        <p>Aeonis has a physical body — follow players, walk to coordinates, build presets (<code>small_hut</code>, <code>tower</code>, <code>wall_segment</code>, <code>platform</code>).</p>
-                    </div>
-                    <div class="ai-card reveal">
-                        <div class="ai-card-header">
-                            <span class="ai-icon">🎮</span>
-                            <h3>Custom Commands</h3>
-                        </div>
-                        <p>Define your own command aliases with <code>[NEWCMD: name | desc]</code>. Build reusable combat preps, kits, and abilities.</p>
-                    </div>
-                </div>
-
-                <div class="ai-providers reveal">
-                    <h3 class="providers-title">🔌 Supported LLM Providers</h3>
-                    <div class="providers-grid">
-                        <div class="provider-card">
-                            <span class="provider-dot openai"></span>
-                            <h4>OpenAI</h4>
-                            <p class="provider-models">gpt-4o · gpt-4o-mini · gpt-4-turbo · gpt-5 / 5.1 / 5.2 · gpt-3.5-turbo</p>
-                        </div>
-                        <div class="provider-card">
-                            <span class="provider-dot gemini"></span>
-                            <h4>Gemini</h4>
-                            <p class="provider-models">gemini-2.0-flash-exp · gemini-2.5-pro · gemini-2.5-flash · gemini-1.0-pro</p>
-                        </div>
-                        <div class="provider-card">
-                            <span class="provider-dot openrouter"></span>
-                            <h4>OpenRouter</h4>
-                            <p class="provider-models">gpt-oss-20b:free · deephermes-3 · mistral-small · claude-3.5-sonnet · llama-3.1-70b</p>
-                            <span class="provider-badge">🆓 Free models available!</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Commands Section -->
-        <section id="commands" class="section section-dark">
-            <div class="container">
-                <div class="section-header reveal">
-                    <span class="section-chip">Complete Reference</span>
-                    <h2 class="section-title">Command <span class="gradient-text">Arsenal</span></h2>
-                    <p class="section-desc">Core 3.0.0 command references for possession, AI, companion bots, and system controls.</p>
+                <div class="section-head reveal">
+                    <p class="chip">Core Commands</p>
+                    <h2>Updated command deck</h2>
+                    <p>Common high-impact commands from current release notes and README.</p>
                 </div>
 
                 <div class="commands-tabs reveal">
                     <div class="tab-nav">
-                        <button class="tab-btn active" data-tab="transform">🔄 Transform</button>
-                        <button class="tab-btn" data-tab="prank">🎭 Pranks</button>
-                        <button class="tab-btn" data-tab="ability">🔊 Abilities</button>
-                        <button class="tab-btn" data-tab="event">🧭 Companion</button>
-                        <button class="tab-btn" data-tab="ai">🤖 AI Tools</button>
-                        <button class="tab-btn" data-tab="system">📊 System</button>
+                        <button class="tab-btn active" data-tab="transform">Transform</button>
+                        <button class="tab-btn" data-tab="prank">Prank</button>
+                        <button class="tab-btn" data-tab="companion">Companion</button>
+                        <button class="tab-btn" data-tab="utility">Utility</button>
                     </div>
 
                     <div class="tab-content active" id="tab-transform">
                         <div class="cmd-list">
-                            <div class="cmd-row"><code>/transform &lt;entity&gt; [variant...]</code><span>Transform into any mob</span></div>
+                            <div class="cmd-row"><code>/transform &lt;entity&gt; [variant...]</code><span>Become any mob</span></div>
                             <div class="cmd-row"><code>/untransform</code><span>Return to player form</span></div>
-                            <div class="cmd-row"><code>/exitbody s</code><span>Exit to Survival mode</span></div>
-                            <div class="cmd-row"><code>/exitbody c</code><span>Exit to Creative mode</span></div>
-                            <div class="cmd-row"><code>/aeonis soul</code><span>Enter soul mode (spectator + possess with P)</span></div>
-                            <div class="cmd-row"><code>/aeonis unsoul</code><span>Exit soul mode</span></div>
-                        </div>
-                        <div class="cmd-examples">
-                            <h4>Examples</h4>
-                            <div class="example-chips">
-                                <code>/transform minecraft:wither</code>
-                                <code>/transform minecraft:ender_dragon</code>
-                                <code>/transform minecraft:breeze</code>
-                                <code>/transform minecraft:phantom</code>
-                                <code>/transform minecraft:ghast</code>
-                                <code>/transform minecraft:blaze</code>
-                                <code>/transform minecraft:enderman</code>
-                                <code>/transform minecraft:bee</code>
-                                <code>/transform minecraft:dolphin</code>
-                                <code>/transform minecraft:creeper</code>
-                            </div>
+                            <div class="cmd-row"><code>/exitbody s</code><span>Exit body to survival</span></div>
+                            <div class="cmd-row"><code>/exitbody c</code><span>Exit body to creative</span></div>
                         </div>
                     </div>
 
                     <div class="tab-content" id="tab-prank">
                         <div class="cmd-list">
-                            <div class="cmd-row"><code>/prank smite &lt;players&gt;</code><span>⚡ Strike with lightning</span></div>
-                            <div class="cmd-row"><code>/prank yeet &lt;players&gt;</code><span>🚀 Launch into the sky</span></div>
-                            <div class="cmd-row"><code>/prank disco &lt;players&gt;</code><span>🎵 Party effects!</span></div>
-                            <div class="cmd-row"><code>/prank supersize &lt;players&gt;</code><span>🦖 Make HUGE</span></div>
-                            <div class="cmd-row"><code>/prank smol &lt;players&gt;</code><span>🐜 Make tiny</span></div>
-                            <div class="cmd-row"><code>/prank chaos &lt;players&gt;</code><span>🎲 3 random effects</span></div>
-                            <div class="cmd-row"><code>/prank rocket &lt;players&gt;</code><span>🚀 Rocket launch!</span></div>
-                            <div class="cmd-row"><code>/prank spin &lt;players&gt; &lt;times&gt;</code><span>🌀 Spin around</span></div>
-                            <div class="cmd-row"><code>/prank freeze &lt;players&gt;</code><span>❄️ Freeze solid</span></div>
-                            <div class="cmd-row"><code>/prank burn &lt;players&gt;</code><span>🔥 Set on fire</span></div>
-                            <div class="cmd-row"><code>/prank drunk &lt;players&gt;</code><span>🍺 Nausea + blindness</span></div>
+                            <div class="cmd-row"><code>/prank morph &lt;players&gt; &lt;chicken|pig|goat|frog|parrot|random_funny&gt;</code><span>Timed morph prank (2 minutes)</span></div>
+                            <div class="cmd-row"><code>/prank boing &lt;players&gt;</code><span>Bounce prank</span></div>
+                            <div class="cmd-row"><code>/prank confetti &lt;players&gt;</code><span>Confetti burst</span></div>
+                            <div class="cmd-row"><code>/prank swap &lt;player_a&gt; &lt;player_b&gt;</code><span>Swap two players</span></div>
                         </div>
                     </div>
 
-                    <div class="tab-content" id="tab-ability">
+                    <div class="tab-content" id="tab-companion">
                         <div class="cmd-list">
-                            <div class="cmd-row"><code>/ability dash</code><span>Quick dash forward</span></div>
-                            <div class="cmd-row"><code>/ability blink &lt;range&gt;</code><span>Teleport short distance</span></div>
-                            <div class="cmd-row"><code>/ability jump</code><span>Moon jump</span></div>
-                            <div class="cmd-row"><code>/ability roar</code><span>Warden roar</span></div>
-                            <div class="cmd-row"><code>/ability darkness</code><span>Darkness pulse</span></div>
-                            <div class="cmd-row"><code>/ability summon vex</code><span>🧚 Summon pet vex</span></div>
-                            <div class="cmd-row"><code>/ability summon wolves &lt;count&gt;</code><span>🐺 Summon spirit wolves</span></div>
-                            <div class="cmd-row"><code>/ability mimic zombie</code><span>🧟 Play zombie ambient</span></div>
-                            <div class="cmd-row"><code>/ability mimic wither</code><span>💀 Play wither ambient</span></div>
-                            <div class="cmd-row"><code>/ability mimic ghast</code><span>👻 Play ghast cry</span></div>
-                            <div class="cmd-row"><code>/ability mimic dragon</code><span>🐉 Play dragon growl</span></div>
+                            <div class="cmd-row"><code>/comp spawn</code><span>Spawn companion and receive Rhistel whistle</span></div>
+                            <div class="cmd-row"><code>/comp comehere</code><span>Recall companion</span></div>
+                            <div class="cmd-row"><code>/comp stats</code><span>Inspect power and status</span></div>
+                            <div class="cmd-row"><code>/comp dismiss</code><span>Remove active companion</span></div>
                         </div>
                     </div>
 
-                    <div class="tab-content" id="tab-event">
+                    <div class="tab-content" id="tab-utility">
                         <div class="cmd-list">
-                            <div class="cmd-row"><code>/comp spawn</code><span>Spawn or replace your companion bot</span></div>
-                            <div class="cmd-row"><code>/comp comehere</code><span>Recall your companion to your location</span></div>
-                            <div class="cmd-row"><code>/comp stats</code><span>Show companion power and status</span></div>
-                            <div class="cmd-row"><code>/comp dismiss</code><span>Dismiss active companion</span></div>
-                            <div class="cmd-row"><code>/event thunder</code><span>Trigger dynamic lightning event</span></div>
-                            <div class="cmd-row"><code>/event eclipse</code><span>Trigger eclipse atmosphere event</span></div>
+                            <div class="cmd-row"><code>/aeonis help</code><span>Show command guide in-game</span></div>
+                            <div class="cmd-row"><code>/aeonis sys ping</code><span>Server and mod diagnostics</span></div>
+                            <div class="cmd-row"><code>/prophunt settings hintinterval &lt;seconds&gt;</code><span>Set round hint pacing</span></div>
+                            <div class="cmd-row"><code>/aeonis features extra_mobs true</code><span>Enable additional mob spawning systems</span></div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="tab-content" id="tab-ai">
-                        <div class="cmd-list">
-                            <div class="cmd-row"><code>/ai llm spawn</code><span>Spawn Aeonis AI assistant</span></div>
-                            <div class="cmd-row"><code>/ai llm despawn</code><span>Despawn Aeonis</span></div>
-                            <div class="cmd-row"><code>/ai llm config</code><span>Open configuration UI</span></div>
-                            <div class="cmd-row"><code>/ai chaotic &lt;entities&gt;</code><span>Enable chaotic AI (experimental)</span></div>
-                            <div class="cmd-row"><code>/ai chaotic stop</code><span>Disable chaotic AI</span></div>
-                            <div class="cmd-row"><code>/ai director &lt;entities&gt; walk_to &lt;x y z&gt;</code><span>Walk entities to position</span></div>
-                            <div class="cmd-row"><code>/ai director &lt;entities&gt; look_at &lt;target&gt;</code><span>Make entities look at target</span></div>
-                            <div class="cmd-row"><code>/ai director &lt;entities&gt; attack &lt;target&gt;</code><span>Make entities attack target</span></div>
-                            <div class="cmd-row"><code>/ai director &lt;entities&gt; stop</code><span>Stop all orders</span></div>
-                        </div>
+                <div class="cooldowns reveal">
+                    <h3>Possession attack cooldowns</h3>
+                    <div class="attack-row">
+                        <span>Wither Skulls</span>
+                        <div class="attack-bar" style="--bar-width:43%"><span class="bar-fill"></span></div>
+                        <span>300ms</span>
                     </div>
-
-                    <div class="tab-content" id="tab-system">
-                        <div class="cmd-list">
-                            <div class="cmd-row"><code>/aeonis sys ping</code><span>Show server/mod stats (TPS, memory, latency)</span></div>
-                            <div class="cmd-row"><code>/aeonis sys story</code><span>Show Aeonis lore and dimension summary</span></div>
-                            <div class="cmd-row"><code>/aeonis help</code><span>Show help message</span></div>
-                            <div class="cmd-row"><code>/aeonis reload</code><span>Reload all mod features &amp; reset states</span></div>
-                            <div class="cmd-row"><code>/aeonis features extra_mobs &lt;true/false&gt;</code><span>Toggle custom mob spawning</span></div>
-                            <div class="cmd-row"><code>/aeonis dimensions</code><span>Show available dimension travel info</span></div>
-                        </div>
+                    <div class="attack-row">
+                        <span>Dragon Fireballs</span>
+                        <div class="attack-bar" style="--bar-width:57%"><span class="bar-fill"></span></div>
+                        <span>400ms</span>
+                    </div>
+                    <div class="attack-row">
+                        <span>Breeze Charges</span>
+                        <div class="attack-bar" style="--bar-width:50%"><span class="bar-fill"></span></div>
+                        <span>350ms</span>
+                    </div>
+                    <div class="attack-row">
+                        <span>Chicken Eggs</span>
+                        <div class="attack-bar" style="--bar-width:100%"><span class="bar-fill"></span></div>
+                        <span>700ms</span>
                     </div>
                 </div>
             </div>
         </section>
 
-
-
-        <!-- Wiki Section -->
-        <section id="wiki" class="section section-dark">
+        <section class="section section-alt" id="timeline">
             <div class="container">
-                <div class="section-header reveal">
-                    <span class="section-chip">Documentation</span>
-                    <h2 class="section-title">Aeonis CM <span class="gradient-text">Full Wiki</span></h2>
-                    <p class="section-desc">A complete in-site guide for systems, dimensions, mobs, progression, and command usage in v3.0.0.</p>
+                <div class="section-head reveal">
+                    <p class="chip">Release Timeline</p>
+                    <h2>From snapshots to stable</h2>
+                    <p>4.0 became stable on 2026-04-02 after a ten-snapshot hardening cycle.</p>
                 </div>
-
-                <div class="wiki-toolbar reveal">
-                    <input id="wikiSearch" class="wiki-search" type="search" placeholder="Search wiki: command, mob, biome, dimension..." aria-label="Search wiki" />
-                    <span class="wiki-tip">Tip: try <code>/comp</code>, <code>Deeper Dark</code>, or <code>Safe Chest</code>.</span>
-                </div>
-
-                <div class="wiki-grid">
-                    <article class="wiki-card reveal" data-tilt>
-                        <h3>Mod Overview</h3>
-                        <p>Aeonis is a multi-system framework that merges mob possession, AI command tooling, custom dimensions, ambient rendering systems, and progression mechanics in one gameplay stack.</p>
-                        <ul>
-                            <li><strong>Star system:</strong> first-person mob possession with movement + attack integration</li>
-                            <li><strong>AI layer:</strong> in-game assistant + director command workflows</li>
-                            <li><strong>Content layer:</strong> dimensions, structures, mobs, blocks, loot, recipes</li>
-                        </ul>
-                    </article>
-
-                    <article class="wiki-card reveal" data-tilt>
-                        <h3>Core Gameplay Loops</h3>
-                        <ul>
-                            <li><strong>Power loop:</strong> transform, learn mob ability timings, use role-specific mobility</li>
-                            <li><strong>Exploration loop:</strong> travel between Ancard and Deeper Dark for biome/structure loot</li>
-                            <li><strong>Automation loop:</strong> use AI + companion bot for support and control flows</li>
-                            <li><strong>Progression loop:</strong> acquire new blocks, enchantments, advancements, and drop tables</li>
-                        </ul>
-                    </article>
-                </div>
-
-                <div class="wiki-accordion reveal" id="wikiAccordion">
-                    <details class="wiki-item" open>
-                        <summary>Dimension Wiki — Deeper Dark + Ancard</summary>
-                        <div class="wiki-content">
-                            <h4>Deeper Dark Dimension</h4>
-                            <p>New underworld region designed around noise-driven cave generation and ancient ecosystem themes.</p>
-                            <ul>
-                                <li><strong>Biomes:</strong> Amethyst Mines, Ancient Dark, Deep Oasis, Deeper Dark, Deeper Dark Cavern, Obsidian Barrier, Volcanic Caverns</li>
-                                <li><strong>Structures:</strong> Ancient Fortress, Ancient Village, Laboratory, Amethyst Mineshaft, Sculk Trap, plus rare structure variants</li>
-                                <li><strong>Worldgen:</strong> custom noise fields, lava channels, fossil formations, sculk growth pockets, rare terrain signatures</li>
-                            </ul>
-                            <h4>Ancard Expansion</h4>
-                            <ul>
-                                <li>Custom fog + post-processing pipeline + dedicated dimension renderer</li>
-                                <li>Dynamic lightning and eclipse event hooks</li>
-                                <li>Expanded block families: stone, deepslate, basalt, obsidian shale, bloodroot and veilshade biome materials</li>
-                            </ul>
-                        </div>
-                    </details>
-
-                    <details class="wiki-item">
-                        <summary>Mob Wiki — New Ecosystems &amp; Bosses</summary>
-                        <div class="wiki-content">
-                            <p><strong>Ancard roster:</strong> Ancard Sovereign, Ancient Colossus, Ash Stalker, Bloodroot Fiend, Boneweaver, Crypt Mite, Echo Wisp, Obelisk Sentinel, Rift Screecher, Ruin Hound, Shade Lurker, Sporeback, Veil Mimic, Veilshade Watcher, and more.</p>
-                            <p><strong>Arda / Ported roster:</strong> Radioactive Warden, Sculk Boss 1, Sculk Golem Boss Reloaded, Shadow Hunter, Sculk Enderman, Sculk Skeleton, Sculk Slime, Sculk Creeper, Sculk Creaking, and more.</p>
-                            <p>Each ecosystem is tuned for different atmosphere and combat pacing, with compatibility for possession gameplay and custom loot pipelines.</p>
-                        </div>
-                    </details>
-
-                    <details class="wiki-item">
-                        <summary>Mechanics Wiki — Blocks, Enchantments, Progression</summary>
-                        <div class="wiki-content">
-                            <ul>
-                                <li><strong>Safe Chest:</strong> high-resistance storage unit that supports single, double, or triple compositions</li>
-                                <li><strong>Permanent Flame:</strong> dark red fire variant that cannot be extinguished by standard interaction</li>
-                                <li><strong>Enchantments:</strong> ClearSight, DarkSpeed, Resonate, SafeFall, Shrieker Sense, Sonic Boom, Undermine</li>
-                                <li><strong>Progression:</strong> new advancements, effects, custom recipes, and mod loot tables</li>
-                            </ul>
-                        </div>
-                    </details>
-
-                    <details class="wiki-item">
-                        <summary>Command Wiki — Complete Command Index</summary>
-                        <div class="wiki-content wiki-codegrid">
-                            <div>
-                                <h4>Transformation</h4>
-                                <p><code>/transform &lt;entity&gt;</code>, <code>/untransform</code>, <code>/exitbody s</code>, <code>/exitbody c</code></p>
-                                <h4>AI Assistant</h4>
-                                <p><code>/ai llm spawn</code>, <code>/ai llm despawn</code>, <code>/ai llm config</code></p>
-                                <h4>Companion Bot</h4>
-                                <p><code>/comp spawn</code>, <code>/comp comehere</code>, <code>/comp stats</code>, <code>/comp dismiss</code></p>
-                            </div>
-                            <div>
-                                <h4>System</h4>
-                                <p><code>/aeonis help</code>, <code>/aeonis sys ping</code>, <code>/aeonis sys story</code>, <code>/aeonis dimensions</code>, <code>/aeonis features extra_mobs true</code></p>
-                                <h4>Ability &amp; Event Utility</h4>
-                                <p><code>/ability dash</code>, <code>/ability blink</code>, <code>/ability roar</code>, <code>/event thunder</code>, <code>/event eclipse</code></p>
-                            </div>
-                            <p class="wiki-note">This index mirrors the in-page command arsenal and the v3.0.0 release command set.</p>
-                        </div>
-                    </details>
-                </div>
-            </div>
-        </section>
-
-        <!-- Changelog Section -->
-        <section id="changelog" class="section">
-            <div class="container">
-                <div class="section-header reveal">
-                    <span class="section-chip">What's New</span>
-                    <h2 class="section-title">Update <span class="gradient-text">Timeline</span></h2>
-                    <p class="section-desc">Every release, from the latest migration to the very first command.</p>
-                </div>
-
                 <div class="timeline">
-                    <div class="timeline-item reveal">
-                        <div class="timeline-marker active"></div>
+                    <article class="timeline-item reveal">
+                        <div class="timeline-dot active"></div>
                         <div class="timeline-card">
-                            <div class="timeline-header">
-                                <span class="timeline-version">v3.0.0</span>
-                                <span class="timeline-date">The Revolution</span>
-                                <span class="timeline-badge badge-latest">Latest</span>
-                            </div>
-                            <h4>Massive Framework Evolution 🌌</h4>
-                            <ul>
-                                <li>New <strong>Deeper Dark</strong> dimension with 7 biomes and custom cave worldgen</li>
-                                <li>New structures: Ancient Fortress, Ancient Village, Laboratory, Amethyst Mineshaft, Sculk Trap</li>
-                                <li>Ancard expansion with custom fog, post-processing, renderer, lightning, and eclipse events</li>
-                                <li>Dozens of new mobs and bosses across Ancard and Arda ecosystems</li>
-                                <li>Companion Bot system and new commands: <code>/comp spawn</code>, <code>/comp comehere</code>, <code>/comp stats</code>, <code>/comp dismiss</code></li>
-                                <li>New mechanics: Safe Chest, Permanent Flame, enchantments, advancements, loot, and recipes</li>
-                            </ul>
+                            <h3>4.0.0 - First Stable 26.1 Release</h3>
+                            <p class="meta">2026-04-02</p>
+                            <p>Stable cut with transformed gameplay reliability pass, improved cleanup, and warning policy remaster.</p>
                         </div>
-                    </div>
-                    <div class="timeline-item reveal">
-                        <div class="timeline-marker"></div>
+                    </article>
+                    <article class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
                         <div class="timeline-card">
-                            <div class="timeline-header">
-                                <span class="timeline-version">v2.0.0</span>
-                                <span class="timeline-date">Minecraft 1.21.11 Era</span>
-                            </div>
-                            <h4>Core Migration &amp; Stability 🚀</h4>
-                            <ul>
-                                <li>Migration to Minecraft 1.21.11 and major compatibility refactors</li>
-                                <li>AI assistant command and scripting foundation matured</li>
-                                <li>Mob possession stability and camera controls improved</li>
-                            </ul>
+                            <h3>4.0-SNAPSHOT10</h3>
+                            <p class="meta">2026-04-01</p>
+                            <p>Camera and interaction reliability pass.</p>
                         </div>
-                    </div>
+                    </article>
+                    <article class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <h3>4.0-SNAPSHOT9</h3>
+                            <p class="meta">2026-04-01</p>
+                            <p>Fixed missing worldgen holder crash path by disabling unstable registration hook.</p>
+                        </div>
+                    </article>
+                    <article class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <h3>4.0-SNAPSHOT8 to 4.0-SNAPSHOT5</h3>
+                            <p class="meta">2026-03-28 to 2026-03-31</p>
+                            <p>Startup stability, mixin target updates, runtime hardening, and world-load diagnostics.</p>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <!-- Installation Section -->
-        <section id="installation" class="section section-dark">
+        <section class="section" id="install">
             <div class="container">
-                <div class="section-header reveal">
-                    <span class="section-chip">Get Started</span>
-                    <h2 class="section-title">Installation <span class="gradient-text">Guide</span></h2>
-                    <p class="section-desc">Install Aeonis 3.0.0 with Fabric or Quilt in minutes.</p>
+                <div class="section-head reveal">
+                    <p class="chip">Installation</p>
+                    <h2>Current baseline and setup</h2>
+                    <p>Use the latest stable 26.1 line dependencies and confirm compatibility on the release page.</p>
                 </div>
 
-                <div class="install-grid">
-                    <div class="install-step reveal">
-                        <div class="install-number"><span>1</span></div>
-                        <div class="install-info">
-                            <h4>Install Fabric or Quilt Loader</h4>
-                            <p>Use <a href="https://fabricmc.net/" target="_blank" rel="noopener">Fabric</a> 0.18.4+ or Quilt 0.17.0+ for Minecraft 1.21.11.</p>
+                <div class="install-steps reveal">
+                    <article>
+                        <span>1</span>
+                        <div>
+                            <h3>Install Fabric or Quilt for Minecraft 26.1</h3>
+                            <p>Use the latest stable loader release for the 26.1 line.</p>
                         </div>
-                    </div>
-                    <div class="install-step reveal">
-                        <div class="install-number"><span>2</span></div>
-                        <div class="install-info">
-                            <h4>Get Fabric API</h4>
-                            <p>Required dependency — install <strong>Fabric API 0.141.1+</strong> (or Quilted Fabric API).</p>
+                    </article>
+                    <article>
+                        <span>2</span>
+                        <div>
+                            <h3>Install required libraries</h3>
+                            <p>Install Fabric API or Quilted Fabric API, Fabric Language Kotlin, and GeckoLib.</p>
                         </div>
-                    </div>
-                    <div class="install-step reveal">
-                        <div class="install-number"><span>3</span></div>
-                        <div class="install-info">
-                            <h4>Install Kotlin + GeckoLib</h4>
-                            <p>Install <strong>Fabric Language Kotlin 1.13.8+</strong> and <strong>GeckoLib 5.4.3+</strong> into <code>mods</code>.</p>
+                    </article>
+                    <article>
+                        <span>3</span>
+                        <div>
+                            <h3>Drop Aeonis into mods folder</h3>
+                            <p>Download the latest release jar and place it in your mods directory.</p>
                         </div>
-                    </div>
-                    <div class="install-step reveal">
-                        <div class="install-number"><span>4</span></div>
-                        <div class="install-info">
-                            <h4>Download Aeonis CM</h4>
-                            <p>Get the latest <strong>.jar</strong> from CurseForge, Modrinth, or GitHub and place it in <code>mods</code>.</p>
+                    </article>
+                    <article>
+                        <span>4</span>
+                        <div>
+                            <h3>Boot and validate</h3>
+                            <p>Use /aeonis help or /aeonis sys ping in-game to verify load and system health.</p>
                         </div>
-                    </div>
-                    <div class="install-step reveal">
-                        <div class="install-number"><span>5</span></div>
-                        <div class="install-info">
-                            <h4>Launch &amp; Enter The Revolution</h4>
-                            <p>Start Minecraft and use <code>/aeonis sys ping</code> plus <code>/aeonis features extra_mobs true</code> to verify setup.</p>
-                        </div>
-                    </div>
+                    </article>
                 </div>
 
-                <div class="requirements-bar reveal">
-                    <div class="req-item">
-                        <span class="req-label">Minecraft</span>
-                        <span class="req-value">1.21.11</span>
-                    </div>
-                    <div class="req-item">
-                        <span class="req-label">Fabric Loader</span>
-                        <span class="req-value">0.18.4+</span>
-                    </div>
-                    <div class="req-item">
-                        <span class="req-label">Fabric API</span>
-                        <span class="req-value">0.141.1+</span>
-                    </div>
-                    <div class="req-item">
-                        <span class="req-label">Fabric Kotlin + GeckoLib</span>
-                        <span class="req-value">1.13.8+ / 5.4.3+</span>
-                    </div>
-                    <div class="req-item">
-                        <span class="req-label">Java</span>
-                        <span class="req-value">21+</span>
-                    </div>
+                <div class="requirements reveal">
+                    <span>Minecraft: 26.1 baseline</span>
+                    <span>26.1.1: hotfix-compatible</span>
+                    <span>Java: 21+ runtime</span>
+                    <span>Fabric API, Kotlin, GeckoLib: required</span>
                 </div>
             </div>
         </section>
 
-        <!-- Downloads Section -->
-        <section id="downloads" class="section">
+        <section class="section" id="showcase">
             <div class="container">
-                <div class="section-header reveal">
-                    <span class="section-chip">Get the Mod</span>
-                    <h2 class="section-title">Download <span class="gradient-text">Aeonis CM</span></h2>
-                    <p class="section-desc">Available on all major platforms. Latest version: <strong>v3.0.0</strong></p>
+                <div class="section-head reveal">
+                    <p class="chip">Video Showcase</p>
+                    <h2>Watch Aeonis in motion</h2>
+                    <p>Mini embedded player wall with featured gameplay clips.</p>
                 </div>
+                <div class="video-grid">
+                    <article class="video-card reveal" data-tilt>
+                        <div class="video-wrap">
+                            <iframe
+                                src="https://www.youtube-nocookie.com/embed/DmkNGfjUfp0?rel=0&modestbranding=1"
+                                title="Aeonis Showcase Video 1"
+                                loading="lazy"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <h3>Gameplay Showcase One</h3>
+                        <p>Featured clip from your official Aeonis channel lineup.</p>
+                    </article>
+                    <article class="video-card reveal" data-tilt>
+                        <div class="video-wrap">
+                            <iframe
+                                src="https://www.youtube-nocookie.com/embed/5xvmvk8DE4E?rel=0&modestbranding=1"
+                                title="Aeonis Showcase Video 2"
+                                loading="lazy"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <h3>Gameplay Showcase Two</h3>
+                        <p>Second featured build clip in a compact cinematic frame.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
+        <section class="section section-alt" id="downloads">
+            <div class="container">
+                <div class="section-head reveal">
+                    <p class="chip">Download</p>
+                    <h2>Get Aeonis 4.0.0</h2>
+                </div>
                 <div class="download-grid">
-                    <a href="https://www.curseforge.com/minecraft/mc-mods/aeonis-command-master" target="_blank" rel="noopener" class="download-card reveal" data-tilt>
-                        <div class="dl-icon curseforge">
-                            <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M18.326 9.212S15.702 8.322 14.21 8.322c-2.28 0-3.258.762-4.235 1.524-.245-.762-2.933-2.04-2.933-2.04S4.109 9.6 4.109 13.16c0 2.285 2.608 3.81 5.215 3.81.977 0 1.955-.245 2.688-.735.488.245 1.22.49 2.197.49 2.607 0 5.46-1.525 5.46-3.81 0-1.79-1.099-2.94-1.343-3.703z"/></svg>
-                        </div>
+                    <a class="download-card reveal" data-tilt href="https://www.curseforge.com/minecraft/mc-mods/aeonis-command-master" target="_blank" rel="noopener">
                         <h3>CurseForge</h3>
-                        <p>Most popular mod platform</p>
-                        <span class="dl-action">Download →</span>
+                        <p>Primary mod distribution page.</p>
+                        <span>Open download</span>
                     </a>
-                    <a href="https://modrinth.com/mod/aeonis-command-master" target="_blank" rel="noopener" class="download-card reveal" data-tilt>
-                        <div class="dl-icon modrinth">
-                            <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.5 14.5c-1.5 1.5-4 2-6 1s-3.5-3.5-3-5.5 2.5-3.5 4.5-3.5 3.5 1 4.5 3c.5 1 .5 3.5 0 5z"/></svg>
-                        </div>
+                    <a class="download-card reveal" data-tilt href="https://modrinth.com/mod/aeonis-command-master" target="_blank" rel="noopener">
                         <h3>Modrinth</h3>
-                        <p>Modern, clean platform</p>
-                        <span class="dl-action">Download →</span>
+                        <p>Modern release channel.</p>
+                        <span>Open download</span>
                     </a>
-                    <a href="https://github.com/TheCorrectSynovian/aeonis-cm" target="_blank" rel="noopener" class="download-card reveal" data-tilt>
-                        <div class="dl-icon github">
-                            <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
-                        </div>
+                    <a class="download-card reveal" data-tilt href="https://github.com/TheCorrectSynovian/Aeonis-mod" target="_blank" rel="noopener">
                         <h3>GitHub</h3>
-                        <p>Source code &amp; releases</p>
-                        <span class="dl-action">View Source →</span>
+                        <p>Source and issue tracking.</p>
+                        <span>Open repository</span>
                     </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Credits Section -->
-        <section id="credits" class="section section-dark">
-            <div class="container">
-                <div class="credits-wrap reveal">
-                    <div class="credits-left">
-                        <span class="section-chip">Credits</span>
-                        <h2 class="credits-title">Built with ❤️ by</h2>
-                        <h3 class="credits-name">QuantumCreeper</h3>
-                        <p class="credits-aka">aka TheCorrectSynovian</p>
-                        <div class="credits-meta">
-                            <span><strong>Mod ID:</strong> aeonis-manager</span>
-                            <span><strong>Version:</strong> 3.0.0</span>
-                            <span><strong>License:</strong> MIT</span>
-                        </div>
-                        <div class="credits-links">
-                            <a href="https://www.youtube.com/@quantumcreeper" target="_blank" rel="noopener" class="credits-btn youtube">📺 YouTube</a>
-                            <a href="https://github.com/TheCorrectSynovian/aeonis-cm" target="_blank" rel="noopener" class="credits-btn gh">💻 GitHub</a>
-                        </div>
-                    </div>
-                    <div class="credits-right">
-                        <div class="notice-box">
-                            <h4>⚠️ Important Notice</h4>
-                            <p><strong>NOT TO BE CONFUSED WITH ANY OTHER MOD!</strong></p>
-                            <p>The EMBERVEIL modpack (previously "Aeonis") has been <strong>renamed to BLITZ</strong> to avoid confusion.</p>
-                            <p class="notice-highlight">AEONIS = This Mod ONLY!</p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <span class="footer-logo">⚡ Aeonis: Command Master 3.0.0</span>
-                    <p>Explore. Possess. Evolve.</p>
-                </div>
-                <div class="footer-links">
-                    <a href="https://www.curseforge.com/minecraft/mc-mods/aeonis-command-master" target="_blank" rel="noopener">CurseForge</a>
-                    <a href="https://modrinth.com/mod/aeonis-command-master" target="_blank" rel="noopener">Modrinth</a>
-                    <a href="https://github.com/TheCorrectSynovian/aeonis-cm" target="_blank" rel="noopener">GitHub</a>
-                    <a href="#wiki">Wiki</a>
-                    <a href="https://www.youtube.com/@quantumcreeper" target="_blank" rel="noopener">YouTube</a>
-                </div>
-                <p class="footer-copy">Made with ❤️ by QuantumCreeper · MIT License · v3.0.0</p>
+        <div class="container footer-inner">
+            <div>
+                <p class="footer-title">Aeonis 4.0.0</p>
+                <p class="footer-sub">Take control. Command anything. Master the game.</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://www.youtube.com/@quantumcreeper" target="_blank" rel="noopener">YouTube</a>
+                <a href="https://github.com/TheCorrectSynovian/Aeonis-mod" target="_blank" rel="noopener">GitHub</a>
+                <a href="#timeline">Changelog</a>
+                <a href="#install">Install</a>
             </div>
         </div>
     </footer>
 
-    <!-- Back to Top -->
-    <button class="back-to-top" id="backToTop" aria-label="Back to top">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
-    </button>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">^</button>
 
     <script src="script.js"></script>
 </body>

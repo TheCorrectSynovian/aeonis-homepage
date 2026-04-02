@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">Aeonis Site Logo</title>
+  <desc id="desc">A stylized A monogram with an energy bolt for Aeonis.</desc>
+  <defs>
+    <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22c1c3"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="boltGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffd177"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="256" height="256" rx="64" fill="#101720"/>
+  <circle cx="128" cy="128" r="92" fill="none" stroke="url(#ringGrad)" stroke-width="14"/>
+
+  <path d="M128 58L73 188h28l11-28h32l11 28h28L128 58zm0 44l13 33h-26l13-33z" fill="#e8f1ff"/>
+
+  <path d="M155 66l-24 46h20l-16 32 42-57h-21l16-21z" fill="url(#boltGrad)"/>
+</svg>
